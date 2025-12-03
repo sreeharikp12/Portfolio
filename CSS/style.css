@@ -1,4 +1,174 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* ============== BASIC RESET ============== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============== RESPONSIVE NAVBAR ============== */
+
+#menu-icon {
+  display: none;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Desktop navbar */
+.navbar {
+  display: flex;
+  gap: 25px;
+}
+
+/* Mobile navbar styles */
+@media (max-width: 768px) {
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #111;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+}
+
+/* ============== HOME SECTION ============== */
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.home-img img {
+  width: 350px;
+  height: auto;
+}
+
+/* Mobile home layout */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img img {
+    width: 70%;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h3 {
+    font-size: 20px;
+  }
+}
+
+/* ============== ABOUT SECTION ============== */
+
+.about {
+  display: flex;
+  padding: 50px 10%;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ============== SKILLS ============== */
+
+.container1 {
+  width: 100%;
+  padding: 20px 10%;
+}
+
+.Technical-bars .bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.progress-line {
+  width: 100%;
+}
+
+/* Stack for small screens */
+@media (max-width: 768px) {
+  .Technical-bars .bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ============== PROJECTS ============== */
+
+.project-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+/* Mobile grid */
+@media (max-width: 768px) {
+  .project-content {
+    grid-template-columns: 1fr;
+  }
+
+  .row img {
+    width: 100%;
+  }
+}
+
+/* ============== CONTACT FORM RESPONSIVE ============== */
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%;
+  gap: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 * {
     margin: 0;

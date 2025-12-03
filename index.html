@@ -29,7 +29,7 @@
             <h3>Hello, It's Me</h3>
             <h1>Sreehari K P</h1>
             <h3>And I'm a <span>Full-stack Developer</span></h3>
-            <p>I build responsive and scalable web applications from front-end to back-end</p>ver
+            <p>I build responsive and scalable web applications from front-end to back-end</p>
             <div class="social-media">
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/sreeharikp12"><i class="fa-brands fa-github"></i></a>
@@ -216,5 +216,14 @@
     <p>Developed with love by Sreehari K P © 2025</p>
  </div>
  <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+ <script>
+const menuIcon = document.querySelector("#menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
+};
+</script>
+
 </body>
 </html>
